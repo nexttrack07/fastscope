@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:ts": "tsc -w",
-    "start:server": "nodemon build/index.js",
-    "start:dev": "concurrently npm:start:*",
+    "start:dev:ts": "tsc -w",
+    "start:dev:server": "nodemon build/index.js",
+    "start:dev": "concurrently npm:start:dev:*",
     "start": "node build/index.js"
   },
   "keywords": [],
