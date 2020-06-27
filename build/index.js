@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var server_1 = require("./server");
 var typeorm_1 = require("typeorm");
 var ormconfig_1 = __importDefault(require("./ormconfig"));
-var PORT = 5000;
+var PORT = parseInt(process.env.PORT) || 5000;
 typeorm_1.createConnection(ormconfig_1.default)
     .then(function () {
     console.log('Database connected!');

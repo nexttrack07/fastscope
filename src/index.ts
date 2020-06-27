@@ -2,7 +2,7 @@ import { Server } from './server'
 import { createConnection } from 'typeorm'
 import config from './ormconfig'
 
-const PORT: number = 5000
+const PORT: number = parseInt(process.env.PORT) || 5000
 
 createConnection(config)
   .then(() => {
